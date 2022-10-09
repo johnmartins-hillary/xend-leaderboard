@@ -32,12 +32,12 @@ function index() {
           <GradientBtn text={"50K"} />
         </Reward>
       </Rewards>
-      {/* <Bottom>
+      <Bottom>
         <img src="/assets/images/SVG/readme.svg" alt="" />
         <span>
-          Please, read the rules, <a href="">terms and conditions</a>
+          Please, read the rules, <a href="/">terms and conditions</a>
         </span>
-      </Bottom> */}
+      </Bottom>
     </Container>
   );
 }
