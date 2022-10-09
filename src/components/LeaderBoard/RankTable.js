@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import ReactPaginate from "react-paginate";
-import { topRef, topSavers } from "../utils/referrals";
 import { Table, TableHead, TH } from "./style";
 import Tablebody from "./Tablebody";
 import { getTopReferalls, getTopSavers } from "../apiCalls";
@@ -8,7 +7,6 @@ import { getTopReferalls, getTopSavers } from "../apiCalls";
 function RankTable({ type, number, setNumber, rankSize }) {
   const tableScroll = useRef();
   const [result, setResult] = useState([]);
-  const [rankData, setRankData] = useState({});
   const ranksPerPage = 15;
 
   const scrollToTop = () => {
@@ -26,24 +24,20 @@ function RankTable({ type, number, setNumber, rankSize }) {
     setNumber(selected + 1);
   };
 
-  const getResult = async (type) => {
-    if (type === "referalls") {
-      const res = await getTopReferalls("2022-4", rankSize);
-      setResult(res?.data?.record);
-      setRankData(res);
-    } else if (type === "savers") {
-      const res = await getTopSavers("2022-4", "", "", "", rankSize);
-      setResult(res?.data?.record);
-      setRankData(res);
-    } else {
-      setResult([]);
-    }
-  };
-
   useEffect(() => {
+    const getResult = async (type) => {
+      if (type === "referalls") {
+        const res = await getTopReferalls("2022-4", rankSize);
+        setResult(res?.data?.record);
+      } else if (type === "savers") {
+        const res = await getTopSavers("2022-4", "", "", "", rankSize);
+        setResult(res?.data?.record);
+      } else {
+        setResult([]);
+      }
+    };
     getResult(type);
   }, [type, number, rankSize]);
-
 
   return (
     <>
