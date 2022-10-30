@@ -9,7 +9,7 @@ export const players = [
     },
     responsiveProps: {
       width: "56px",
-      top: "100px",
+      top: "110px",
       left: "20px",
     },
   },
@@ -24,7 +24,7 @@ export const players = [
     responsiveProps: {
       width: "70px",
       top: "120px",
-      left: "70px",
+      left: "55px",
     },
   },
   {
@@ -37,7 +37,7 @@ export const players = [
     },
     responsiveProps: {
       width: "56px",
-      left: "130px",
+      left: "115px",
       top: "130px",
     },
   },
@@ -52,7 +52,7 @@ export const players = [
     responsiveProps: {
       width: "80px",
       height: "100px",
-      left: "160px",
+      left: "150px",
       top: "120px",
     },
   },
@@ -61,13 +61,13 @@ export const players = [
     img: "/assets/images/SVG/sieria x 19.svg",
     property: {
       width: "235.26px",
-      left: "701.25px",
+      left: "605.25px",
       top: "449px",
     },
     responsiveProps: {
       width: "65px",
-      left: "220px",
-      top: "125px",
+      left: "210px",
+      top: "130px",
     },
   },
   {
@@ -80,7 +80,7 @@ export const players = [
     },
     responsiveProps: {
       width: "65px",
-      left: "270px",
+      left: "260px",
       top: "130px",
     },
   },
@@ -95,7 +95,7 @@ export const players = [
     responsiveProps: {
       width: "70px",
       top: "120px",
-      left: "330px",
+      left: "310px",
     },
   },
 ];

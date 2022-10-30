@@ -80,6 +80,6 @@ export const TopLeftContentDesc = styled.p`
   color: #4b4b4b;
 
   @media screen and (max-width: 600px) {
-    font-size: 20px;
+    font-size: 15px;
   }
 `;

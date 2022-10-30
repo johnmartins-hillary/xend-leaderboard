@@ -73,7 +73,7 @@ export const SearchContainer = styled.div`
   padding: 0 50px;
   @media screen and (max-width: 600px) {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     padding: 0 10px;
     align-items: flex-start;
   }
@@ -89,17 +89,17 @@ export const SearchBar = styled.div`
   border-radius: 55px;
   @media screen and (max-width: 600px) {
     width: 150px;
-    height: 30px;
-    padding: 10px;
+    height: 25px;
+    padding: 5px;
   }
 `;
 
 export const SearchBarIcon = styled.img`
   margin-right: 10px;
   @media screen and (max-width: 600px) {
-    width:5px,
-    height:5px;
-    margin-right:5px;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
   }
 `;
 
@@ -264,10 +264,8 @@ export const TableData = styled.td`
 
     @media screen and (max-width: 600px) {
       img:nth-child(2) {
-        @media screen and (max-width: 600px) {
-          font-size: 10px;
-        }
-        width: 50px;
+        width: 40px;
+        bottom: 0;
       }
       img:last-child {
         width: 30px;

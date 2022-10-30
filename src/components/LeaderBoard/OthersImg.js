@@ -9,8 +9,8 @@ const Container = styled.div`
   border-radius: 50%;
   border: 3px solid #e96313;
   @media screen and (max-width: 600px) {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
   }
 `;
 const OthersImg = () => {

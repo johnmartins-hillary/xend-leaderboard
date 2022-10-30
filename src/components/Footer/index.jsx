@@ -17,7 +17,7 @@ function Footer() {
     <FooterContainer>
       <TopContent>
         <TopLeftContent>
-          <TopLeftContentTitle>Join Out Community</TopLeftContentTitle>
+          <TopLeftContentTitle>Join Our Community</TopLeftContentTitle>
           <TopLeftContentDesc>
             Follow the trends, ask questions, get help, join the conversation
             and learn about xend finance.
