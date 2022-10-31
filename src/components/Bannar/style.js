@@ -4,7 +4,7 @@ export const TopContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  background: url("/assets/images/SVG/banner-bg.svg");
+  background: url("/assets/images/SVG/banner-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   object-fit: contain;

@@ -47,19 +47,19 @@ export const SubTitle = styled.div`
 
 export const Player = styled.div`
   position: absolute;
-  width: 424.49px;
+  width: 414.49px;
   height: 600.98px;
-  left: 968.11px;
+  left: 980.11px;
   top: -200.38px;
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
   }
 
   @media screen and (max-width: 600px) {
-    left: 70%;
-    width: 100px;
+    left: 75%;
+    width: 110px;
     height: 150px;
     top: 0;
   }

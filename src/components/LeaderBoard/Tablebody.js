@@ -14,11 +14,11 @@ const Tablebody = ({ currentRank, type, currentPage, ranksPerPage }) => {
               </span>
               <img src="/assets/images/SVG/rectangle.svg" alt="rect" />
               {index === 0 && currentPage === 1 ? (
-                <img src="/assets/images/SVG/goldcup.svg" alt="gold-cup" />
+                <img src="/assets/images/SVG/goldcup.png" alt="gold-cup" />
               ) : index === 1 && currentPage === 1 ? (
-                <img src="/assets/images/SVG/silvercup.svg" alt="silver-cup" />
+                <img src="/assets/images/SVG/silvercup.png" alt="silver-cup" />
               ) : index === 2 && currentPage === 1 ? (
-                <img src="/assets/images/SVG/bronzecup.svg" alt="bronze-cup" />
+                <img src="/assets/images/SVG/bronzecup.png" alt="bronze-cup" />
               ) : (
                 <OthersImg />
               )}

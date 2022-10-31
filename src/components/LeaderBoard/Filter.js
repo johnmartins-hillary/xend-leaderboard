@@ -25,7 +25,7 @@ const Filter = ({
   return (
     <SearchContainer>
       <SearchBar>
-        <SearchBarIcon src="/assets/images/SVG/search.svg" />
+        <SearchBarIcon src="/assets/images/SVG/search.png" />
         <SearchInput type="text" placeholder="Search address" />
       </SearchBar>
 
@@ -37,7 +37,7 @@ const Filter = ({
           onClick={(e) => setToggleTypeDropdown(!toggleTypeDropdown)}
         >
           Top {typeRank}
-          <img src="/assets/images/SVG/dropdown.svg" alt="" />
+          <img src="/assets/images/SVG/dropdown.png" alt="" />
           {toggleTypeDropdown && (
             <RankOptionsContainer>
               {typeOptions.map((item, index) => (

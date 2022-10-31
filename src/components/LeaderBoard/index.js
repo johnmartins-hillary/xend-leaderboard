@@ -25,7 +25,7 @@ function LeaderBoard() {
         <SubTitle>Rank up and get the highest rewards</SubTitle>
       </TitleContainer>
       <Player>
-        <img src="/assets/images/SVG/off-player.svg" alt="" />
+        <img src="/assets/images/SVG/off-player.png" alt="" />
       </Player>
 
       <Filter

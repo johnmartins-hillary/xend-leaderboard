@@ -70,7 +70,10 @@ export const TopRightContent = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   flex: 0.6;
-  gap: 20px;
+  gap: 50px;
+  @media screen and (max-width: 600px) {
+    gap: 20px;
+  }
 `;
 
 export const TopLeftContentDesc = styled.p`
