@@ -25,13 +25,16 @@ function RankTable({ type, number, setNumber, rankSize }) {
   };
 
   useEffect(() => {
+    setResult([]);
     const getResult = async (type) => {
       if (type === "referalls") {
         const res = await getTopReferalls("2022-4", rankSize);
-        setResult(res?.data?.record);
+        if (res?.data) setResult(res?.data?.record);
+        else setResult([]);
       } else if (type === "savers") {
         const res = await getTopSavers("2022-4", "", "", "", rankSize);
-        setResult(res?.data?.record);
+        if (res?.data) setResult(res?.data?.record);
+        else setResult([]);
       } else {
         setResult([]);
       }
